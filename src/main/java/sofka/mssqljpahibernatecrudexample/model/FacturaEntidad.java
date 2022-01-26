@@ -7,6 +7,7 @@ import java.util.Date;
 @Table(name = "FACTURAS")
 public class FacturaEntidad {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id_factura;
     private Date fecha;
     private long id_cliente;

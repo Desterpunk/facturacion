@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class ClienteEntidad {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id_cliente;
     private String nombre;
     private String direccion;

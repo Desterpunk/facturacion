@@ -1,14 +1,12 @@
 package sofka.mssqljpahibernatecrudexample.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "VENTAS")
 public class VentasEntidad {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id_venta;
     private long id_factura;
     private long id_producto;
