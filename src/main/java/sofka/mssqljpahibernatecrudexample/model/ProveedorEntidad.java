@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "PROVEEDORES")
 public class ProveedorEntidad {
     @Id
-    private long id;
+    private long id_proveedor;
     private String nombre;
     private String direccion;
     private String telefono;
@@ -24,11 +24,11 @@ public class ProveedorEntidad {
     }
 
     public long getId_proveedor() {
-        return id;
+        return id_proveedor;
     }
 
     public void setId_proveedor(long id) {
-        this.id = id;
+        this.id_proveedor = id;
     }
 
     @Column(name = "NOMBRE", nullable = false)
@@ -64,7 +64,7 @@ public class ProveedorEntidad {
     @Override
     public String toString() {
         return "ProveedorEntidad{" +
-                "id=" + id +
+                "id=" + id_proveedor +
                 ", nombre='" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", telefono='" + telefono + '\'' +

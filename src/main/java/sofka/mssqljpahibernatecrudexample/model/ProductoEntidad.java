@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class ProductoEntidad {
 
     @Id
-    private long id;
+    private long id_producto;
     private String descripcion;
     private long precio;
     private long id_categoria;
@@ -27,11 +27,11 @@ public class ProductoEntidad {
     }
 
     public long getId_producto() {
-        return id;
+        return id_producto;
     }
 
     public void setId_producto(long id) {
-        this.id = id;
+        this.id_producto = id;
     }
 
     @Column(name = "DESCRIPCION", nullable = false)
@@ -77,7 +77,7 @@ public class ProductoEntidad {
     @Override
     public String toString() {
         return "ProductoEntidad{" +
-                "id=" + id +
+                "id=" + id_producto +
                 ", descripcion='" + descripcion + '\'' +
                 ", precio=" + precio +
                 ", id_categoria=" + id_categoria +

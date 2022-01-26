@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class ClienteEntidad {
 
     @Id
-    private long id;
+    private long id_cliente;
     private String nombre;
     private String direccion;
     private String telefono;
@@ -23,11 +23,11 @@ public class ClienteEntidad {
 
 
     public long getId_cliente() {
-        return id;
+        return id_cliente;
     }
 
     public void setId_cliente(long id) {
-        this.id = id;
+        this.id_cliente = id;
     }
 
     @Column(name = "NOMBRE", nullable = false)
@@ -63,7 +63,7 @@ public class ClienteEntidad {
     @Override
     public String toString() {
         return "ClienteEntidad{" +
-                "id='" + id + '\'' +
+                "id='" + id_cliente + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", telefono='" + telefono + '\'' +

@@ -7,7 +7,7 @@ import java.util.Date;
 @Table(name = "FACTURAS")
 public class FacturaEntidad {
     @Id
-    private long id;
+    private long id_factura;
     private Date fecha;
     private long id_cliente;
 
@@ -20,11 +20,11 @@ public class FacturaEntidad {
     }
 
     public long getId_factura() {
-        return id;
+        return id_factura;
     }
 
     public void setId_factura(long id) {
-        this.id = id;
+        this.id_factura = id;
     }
 
     @Column(name = "FECHA", nullable = false)
@@ -50,7 +50,7 @@ public class FacturaEntidad {
     @Override
     public String toString() {
         return "FacturaEntidad{" +
-                "id=" + id +
+                "id=" + id_factura +
                 ", fecha=" + fecha +
                 ", id_cliente=" + id_cliente +
                 '}';
